@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Резюме Віталія Чесака — лабораторна робота №3, CSS">
+  <title>Віталій Чесак — портфоліо | CSS</title>
+  <!-- External CSS: основний спосіб стилізації -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Internal CSS: окремий демонстраційний приклад -->
+  <style>
+    .internal-note { border-left: 3px solid #b3c4fd; padding-left: 13px; }
+  </style>
+</head>
+<body>
+  <div class="site-wrap" id="top">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand"><span class="brand-mark">VC</span><span>PORTFOLIO<span class="brand-dot">.</span></span></div>
+        <span class="hero-number">КБ-208 <span class="dot"></span> ЛЬВІВ, УКРАЇНА</span>
+      </div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">01 / ПЕРСОНАЛЬНЕ РЕЗЮМЕ</p>
+          <h1>Віталій<br><span>Чесак<span class="name-period">.</span></span></h1>
+          <p class="hero-lead">Студент напряму «Кібербезпека» — досліджую вебтехнології, програмування та інформаційну безпеку.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#projects">Мої проєкти <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#contacts">Контакти <span aria-hidden="true">↘</span></a></div>
+        </div>
+        <div class="hero-aside" aria-label="Ключові напрями"><div class="orbit"><span class="orbit-top">LEARN / BUILD / GROW</span><span class="orbit-center">&lt;/&gt;</span><span class="orbit-bottom">WEB • DEVELOPMENT</span></div><span class="hero-aside-caption">HTML / CSS / REACT / GIT</span></div>
+      </div>
+      <nav class="primary-nav" aria-label="Навігація резюме"><a href="#about">01. Про мене</a><a href="#education">02. Освіта</a><a href="#skills">03. Навички</a><a href="#projects">04. Проєкти</a><a href="#contacts">05. Контакти</a></nav>
+    </header>
+    <main class="main-content">
+      <div class="intro-strip"><span>ПРОФІЛЬ / 2026</span><p>Від ідеї до робочого інтерфейсу — <strong>крок за кроком.</strong></p></div>
+      <div class="content-grid">
+        <section class="panel panel-about" id="about" aria-labelledby="about-title"><div class="panel-header"><span class="section-label">01 / ПРО МЕНЕ</span><span class="section-symbol" aria-hidden="true">✳</span></div><h2 id="about-title">Привіт! 👋</h2><p>Навчаюся у Національному університеті «Львівська політехніка». Цікавлюся веброзробкою, структурою сучасних застосунків і захистом інформації.</p><p>Працюю з HTML, CSS, Git і React у межах практичних навчальних завдань.</p><p class="internal-note">Цей блок демонструє внутрішній спосіб підключення CSS через тег <code>&lt;style&gt;</code>.</p></section>
+        <section class="panel panel-education" id="education" aria-labelledby="education-title"><div class="panel-header"><span class="section-label">02 / ОСВІТА</span><span class="section-symbol" aria-hidden="true">↗</span></div><h2 id="education-title">Освіта</h2><p class="education-label">ВИЩА ОСВІТА</p><h3>Національний університет «Львівська політехніка»</h3><div class="meta-row"><span>Напрям</span><strong>Кібербезпека</strong></div><div class="meta-row"><span>Група</span><strong>КБ-208</strong></div><div class="meta-row"><span>Місто</span><strong>Львів</strong></div></section>
+        <section class="panel panel-skills" id="skills" aria-labelledby="skills-title"><div class="panel-header"><span class="section-label">03 / НАВИЧКИ</span><span class="section-symbol" aria-hidden="true">✦</span></div><h2 id="skills-title">Мій стек</h2><p class="muted">Технології, які вивчаю та використовую.</p><ul class="skill-grid"><li><span>01</span><strong>HTML5</strong><small>Структура</small></li><li><span>02</span><strong>CSS3</strong><small>Стилі / Flex / Grid</small></li><li><span>03</span><strong>JavaScript</strong><small>Основи / JSX</small></li><li><span>04</span><strong>React</strong><small>Компоненти</small></li><li><span>05</span><strong>Git</strong><small>Контроль версій</small></li><li><span>06</span><strong>Tailwind</strong><small>Utility-first</small></li></ul></section>
+        <section class="panel panel-projects" id="projects" aria-labelledby="projects-title"><div class="panel-header"><span class="section-label">04 / ПРАКТИКА</span><span class="section-symbol" aria-hidden="true">↗</span></div><h2 id="projects-title">Навчальні проєкти</h2><div class="project"><span class="project-num">01</span><div><h3>Семантичне резюме</h3><p>Вебсторінка на HTML5 з логічною структурою, навігацією та розділами.</p><span class="tag">HTML5</span></div></div><div class="project"><span class="project-num">02</span><div><h3>Адаптивне CSS-резюме</h3><p>Оформлення за допомогою зовнішніх стилів, Flexbox, Grid та медіазапитів.</p><span class="tag">CSS3</span><span class="tag">RESPONSIVE</span></div></div><div class="project"><span class="project-num">03</span><div><h3>Резюме на React</h3><p>Компонентна архітектура з Vite та стилізацією за допомогою Tailwind CSS.</p><span class="tag">REACT</span><span class="tag">TAILWIND</span></div></div></section>
+        <section class="panel panel-contact" id="contacts" aria-labelledby="contacts-title"><div class="panel-header"><span class="section-label">05 / КОНТАКТИ</span><span class="section-symbol" aria-hidden="true">◎</span></div><h2 id="contacts-title">На звʼязку</h2><p>Місце навчання: Львів, Україна.</p><div class="contact-links"><a href="https://github.com/vitaliichesakkb2025-spec/web-programming-labs" target="_blank" rel="noopener noreferrer">GitHub / навчальні роботи <span>↗</span></a><a href="https://lpnu.ua/" target="_blank" rel="noopener noreferrer">Львівська політехніка <span>↗</span></a><a href="https://developer.mozilla.org/uk/docs/Web/CSS" target="_blank" rel="noopener noreferrer">Довідник CSS <span>↗</span></a></div></section>
+      </div>
+      <!-- Inline CSS: третій спосіб стилізації, лише один приклад -->
+      <p class="method-note" style="letter-spacing: 0.045em;">Приклад inline CSS: властивість letter-spacing задана атрибутом style цього абзацу.</p>
+    </main>
+    <footer class="footer"><span>© 2026 Чесак Віталій Володимирович</span><span>ЛАБОРАТОРНА №3 / CSS</span><a href="#top">Нагору ↑</a></footer>
+  </div>
+</body>
+</html>
