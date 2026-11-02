@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="uk">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="&Rcy;&iecy;&zcy;&yucy;&mcy;&iecy; &Vcy;&iukcy;&tcy;&acy;&lcy;&iukcy;&yacy; &CHcy;&iecy;&scy;&acy;&kcy;&acy; &mdash; &lcy;&acy;&bcy;&ocy;&rcy;&acy;&tcy;&ocy;&rcy;&ncy;&acy; &numero;4: JavaScript, API, localStorage, &fcy;&ocy;&rcy;&mcy;&icy; &tcy;&acy; &tcy;&iecy;&mcy;&icy;" name="description"/>
+  <title>
+   &Vcy;&iukcy;&tcy;&acy;&lcy;&iukcy;&jcy; &CHcy;&iecy;&scy;&acy;&kcy; &mdash; &pcy;&ocy;&rcy;&tcy;&fcy;&ocy;&lcy;&iukcy;&ocy; | JavaScript
+  </title>
+  <!-- External CSS: основний спосіб стилізації -->
+  <link href="styles.css" rel="stylesheet"/>
+  <!-- Internal CSS: окремий демонстраційний приклад -->
+  <style>
+   .internal-note { border-left: 3px solid #b3c4fd; padding-left: 13px; }
+  </style>
+ </head>
+ <body>
+  <div class="site-wrap" id="top">
+   <header class="hero">
+    <div class="hero-top">
+     <button aria-label="&Pcy;&iecy;&rcy;&iecy;&mcy;&kcy;&ncy;&ucy;&tcy;&icy; &scy;&vcy;&iukcy;&tcy;&lcy;&ucy; &iukcy; &tcy;&iecy;&mcy;&ncy;&ucy; &tcy;&iecy;&mcy;&ucy;" aria-pressed="false" class="theme-switch" id="theme-toggle" type="button">
+      ☀ &Scy;&vcy;&iukcy;&tcy;&lcy;&acy; &tcy;&iecy;&mcy;&acy;
+     </button>
+     <div class="brand">
+      <span class="brand-mark">
+       VC
+      </span>
+      <span>
+       PORTFOLIO
+       <span class="brand-dot">
+        .
+       </span>
+      </span>
+     </div>
+     <span class="hero-number">
+      &Kcy;&Bcy;-208
+      <span class="dot">
+      </span>
+      &Lcy;&SOFTcy;&Vcy;&Iukcy;&Vcy;, &Ucy;&Kcy;&Rcy;&Acy;&YIcy;&Ncy;&Acy;
+     </span>
+    </div>
+    <div class="hero-content">
+     <div class="hero-copy">
+      <p class="eyebrow">
+       01 / &Pcy;&IEcy;&Rcy;&Scy;&Ocy;&Ncy;&Acy;&Lcy;&SOFTcy;&Ncy;&IEcy; &Rcy;&IEcy;&Zcy;&YUcy;&Mcy;&IEcy;
+      </p>
+      <h1>
+       &Vcy;&iukcy;&tcy;&acy;&lcy;&iukcy;&jcy;
+       <br/>
+       <span>
+        &CHcy;&iecy;&scy;&acy;&kcy;
+        <span class="name-period">
+         .
+        </span>
+       </span>
+      </h1>
+      <p class="hero-lead">
+       &Scy;&tcy;&ucy;&dcy;&iecy;&ncy;&tcy; &ncy;&acy;&pcy;&rcy;&yacy;&mcy;&ucy; &laquo;&Kcy;&iukcy;&bcy;&iecy;&rcy;&bcy;&iecy;&zcy;&pcy;&iecy;&kcy;&acy;&raquo; &mdash; &dcy;&ocy;&scy;&lcy;&iukcy;&dcy;&zhcy;&ucy;&yucy; &vcy;&iecy;&bcy;&tcy;&iecy;&khcy;&ncy;&ocy;&lcy;&ocy;&gcy;&iukcy;&yicy;, &pcy;&rcy;&ocy;&gcy;&rcy;&acy;&mcy;&ucy;&vcy;&acy;&ncy;&ncy;&yacy; &tcy;&acy; &iukcy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&iukcy;&jcy;&ncy;&ucy; &bcy;&iecy;&zcy;&pcy;&iecy;&kcy;&ucy;.
+      </p>
+      <div class="hero-actions">
+       <a class="btn btn-primary" href="#projects">
+        &Mcy;&ocy;&yicy; &pcy;&rcy;&ocy;&jukcy;&kcy;&tcy;&icy;
+        <span aria-hidden="true">
+         &nearrow;
+        </span>
+       </a>
+       <a class="btn btn-ghost" href="#contacts">
+        &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&icy;
+        <span aria-hidden="true">
+         &searrow;
+        </span>
+       </a>
+      </div>
+     </div>
+     <div aria-label="&Kcy;&lcy;&yucy;&chcy;&ocy;&vcy;&iukcy; &ncy;&acy;&pcy;&rcy;&yacy;&mcy;&icy;" class="hero-aside">
+      <div class="orbit">
+       <span class="orbit-top">
+        LEARN / BUILD / GROW
+       </span>
+       <span class="orbit-center">
+        &lt;/&gt;
+       </span>
+       <span class="orbit-bottom">
+        WEB &bull; DEVELOPMENT
+       </span>
+      </div>
+      <span class="hero-aside-caption">
+       HTML / CSS / REACT / GIT
+      </span>
+     </div>
+    </div>
+    <nav aria-label="&Ncy;&acy;&vcy;&iukcy;&gcy;&acy;&tscy;&iukcy;&yacy; &rcy;&iecy;&zcy;&yucy;&mcy;&iecy;" class="primary-nav">
+     <a href="#about">
+      01. &Pcy;&rcy;&ocy; &mcy;&iecy;&ncy;&iecy;
+     </a>
+     <a href="#education">
+      02. &Ocy;&scy;&vcy;&iukcy;&tcy;&acy;
+     </a>
+     <a href="#skills">
+      03. &Ncy;&acy;&vcy;&icy;&chcy;&kcy;&icy;
+     </a>
+     <a href="#projects">
+      04. &Pcy;&rcy;&ocy;&jukcy;&kcy;&tcy;&icy;
+     </a>
+     <a href="#contacts">
+      05. &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&icy;
+     </a>
+     <a href="#reviews">
+      06. &Vcy;&iukcy;&dcy;&gcy;&ucy;&kcy;&icy;
+     </a>
+    </nav>
+   </header>
+   <main class="main-content">
+    <div class="intro-strip">
+     <span>
+      &Pcy;&Rcy;&Ocy;&Fcy;&Iukcy;&Lcy;&SOFTcy; / 2026
+     </span>
+     <p>
+      &Vcy;&iukcy;&dcy; &iukcy;&dcy;&iecy;&yicy; &dcy;&ocy; &rcy;&ocy;&bcy;&ocy;&chcy;&ocy;&gcy;&ocy; &iukcy;&ncy;&tcy;&iecy;&rcy;&fcy;&iecy;&jcy;&scy;&ucy; &mdash;
+      <strong>
+       &kcy;&rcy;&ocy;&kcy; &zcy;&acy; &kcy;&rcy;&ocy;&kcy;&ocy;&mcy;.
+      </strong>
+     </p>
+    </div>
+    <div class="content-grid">
+     <section aria-labelledby="about-title" class="panel panel-about" id="about">
+      <div class="panel-header">
+       <span class="section-label">
+        01 / &Pcy;&Rcy;&Ocy; &Mcy;&IEcy;&Ncy;&IEcy;
+       </span>
+       <span aria-hidden="true" class="section-symbol">
+        ✳
+       </span>
+      </div>
+      <h2 id="about-title">
+       &Pcy;&rcy;&icy;&vcy;&iukcy;&tcy;! 👋
+      </h2>
+      <p>
+       &Ncy;&acy;&vcy;&chcy;&acy;&yucy;&scy;&yacy; &ucy; &Ncy;&acy;&tscy;&iukcy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ocy;&mcy;&ucy; &ucy;&ncy;&iukcy;&vcy;&iecy;&rcy;&scy;&icy;&tcy;&iecy;&tcy;&iukcy; &laquo;&Lcy;&softcy;&vcy;&iukcy;&vcy;&scy;&softcy;&kcy;&acy; &pcy;&ocy;&lcy;&iukcy;&tcy;&iecy;&khcy;&ncy;&iukcy;&kcy;&acy;&raquo;. &TScy;&iukcy;&kcy;&acy;&vcy;&lcy;&yucy;&scy;&yacy; &vcy;&iecy;&bcy;&rcy;&ocy;&zcy;&rcy;&ocy;&bcy;&kcy;&ocy;&yucy;, &scy;&tcy;&rcy;&ucy;&kcy;&tcy;&ucy;&rcy;&ocy;&yucy; &scy;&ucy;&chcy;&acy;&scy;&ncy;&icy;&khcy; &zcy;&acy;&scy;&tcy;&ocy;&scy;&ucy;&ncy;&kcy;&iukcy;&vcy; &iukcy; &zcy;&acy;&khcy;&icy;&scy;&tcy;&ocy;&mcy; &iukcy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&iukcy;&yicy;.
+      </p>
+      <p>
+       &Pcy;&rcy;&acy;&tscy;&yucy;&yucy; &zcy; HTML, CSS, Git &iukcy; React &ucy; &mcy;&iecy;&zhcy;&acy;&khcy; &pcy;&rcy;&acy;&kcy;&tcy;&icy;&chcy;&ncy;&icy;&khcy; &ncy;&acy;&vcy;&chcy;&acy;&lcy;&softcy;&ncy;&icy;&khcy; &zcy;&acy;&vcy;&dcy;&acy;&ncy;&softcy;.
+      </p>
+      <p class="internal-note">
+       &TScy;&iecy;&jcy; &bcy;&lcy;&ocy;&kcy; &dcy;&iecy;&mcy;&ocy;&ncy;&scy;&tcy;&rcy;&ucy;&jukcy; &vcy;&ncy;&ucy;&tcy;&rcy;&iukcy;&shcy;&ncy;&iukcy;&jcy; &scy;&pcy;&ocy;&scy;&iukcy;&bcy; &pcy;&iukcy;&dcy;&kcy;&lcy;&yucy;&chcy;&iecy;&ncy;&ncy;&yacy; CSS &chcy;&iecy;&rcy;&iecy;&zcy; &tcy;&iecy;&gcy;
+       <code>
+        &lt;style&gt;
+       </code>
+       .
+      </p>
+     </section>
+     <section aria-labelledby="education-title" class="panel panel-education" id="education">
+      <div class="panel-header">
+       <span class="section-label">
+        02 / &Ocy;&Scy;&Vcy;&Iukcy;&Tcy;&Acy;
+       </span>
+       <span aria-hidden="true" class="section-symbol">
+        &nearrow;
+       </span>
+      </div>
+      <h2 id="education-title">
+       &Ocy;&scy;&vcy;&iukcy;&tcy;&acy;
+      </h2>
+      <p class="education-label">
+       &Vcy;&Icy;&SHCHcy;&Acy; &Ocy;&Scy;&Vcy;&Iukcy;&Tcy;&Acy;
+      </p>
+      <h3>
+       &Ncy;&acy;&tscy;&iukcy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&icy;&jcy; &ucy;&ncy;&iukcy;&vcy;&iecy;&rcy;&scy;&icy;&tcy;&iecy;&tcy; &laquo;&Lcy;&softcy;&vcy;&iukcy;&vcy;&scy;&softcy;&kcy;&acy; &pcy;&ocy;&lcy;&iukcy;&tcy;&iecy;&khcy;&ncy;&iukcy;&kcy;&acy;&raquo;
+      </h3>
+      <div class="meta-row">
+       <span>
+        &Ncy;&acy;&pcy;&rcy;&yacy;&mcy;
+       </span>
+       <strong>
+        &Kcy;&iukcy;&bcy;&iecy;&rcy;&bcy;&iecy;&zcy;&pcy;&iecy;&kcy;&acy;
+       </strong>
+      </div>
+      <div class="meta-row">
+       <span>
+        &Gcy;&rcy;&ucy;&pcy;&acy;
+       </span>
+       <strong>
+        &Kcy;&Bcy;-208
+       </strong>
+      </div>
+      <div class="meta-row">
+       <span>
+        &Mcy;&iukcy;&scy;&tcy;&ocy;
+       </span>
+       <strong>
+        &Lcy;&softcy;&vcy;&iukcy;&vcy;
+       </strong>
+      </div>
+     </section>
+     <section aria-labelledby="skills-title" class="panel panel-skills" id="skills">
+      <div class="panel-header">
+       <span class="section-label">
+        03 / &Ncy;&Acy;&Vcy;&Icy;&CHcy;&Kcy;&Icy;
+       </span>
+       <span aria-hidden="true" class="section-symbol">
+        ✦
+       </span>
+      </div>
+      <h2 id="skills-title">
+       &Mcy;&iukcy;&jcy; &scy;&tcy;&iecy;&kcy;
+      </h2>
+      <p class="muted">
+       &Tcy;&iecy;&khcy;&ncy;&ocy;&lcy;&ocy;&gcy;&iukcy;&yicy;, &yacy;&kcy;&iukcy; &vcy;&icy;&vcy;&chcy;&acy;&yucy; &tcy;&acy; &vcy;&icy;&kcy;&ocy;&rcy;&icy;&scy;&tcy;&ocy;&vcy;&ucy;&yucy;.
+      </p>
+      <ul class="skill-grid">
+       <li>
+        <span>
+         01
+        </span>
+        <strong>
+         HTML5
+        </strong>
+        <small>
+         &Scy;&tcy;&rcy;&ucy;&kcy;&tcy;&ucy;&rcy;&acy;
+        </small>
+       </li>
+       <li>
+        <span>
+         02
+        </span>
+        <strong>
+         CSS3
+        </strong>
+        <small>
+         &Scy;&tcy;&icy;&lcy;&iukcy; / Flex / Grid
+        </small>
+       </li>
+       <li>
+        <span>
+         03
+        </span>
+        <strong>
+         JavaScript
+        </strong>
+        <small>
+         &Ocy;&scy;&ncy;&ocy;&vcy;&icy; / JSX
+        </small>
+       </li>
+       <li>
+        <span>
+         04
+        </span>
+        <strong>
+         React
+        </strong>
+        <small>
+         &Kcy;&ocy;&mcy;&pcy;&ocy;&ncy;&iecy;&ncy;&tcy;&icy;
+        </small>
+       </li>
+       <li>
+        <span>
+         05
+        </span>
+        <strong>
+         Git
+        </strong>
+        <small>
+         &Kcy;&ocy;&ncy;&tcy;&rcy;&ocy;&lcy;&softcy; &vcy;&iecy;&rcy;&scy;&iukcy;&jcy;
+        </small>
+       </li>
+       <li>
+        <span>
+         06
+        </span>
+        <strong>
+         Tailwind
+        </strong>
+        <small>
+         Utility-first
+        </small>
+       </li>
+      </ul>
+     </section>
+     <section aria-labelledby="projects-title" class="panel panel-projects" id="projects">
+      <div class="panel-header">
+       <span class="section-label">
+        04 / &Pcy;&Rcy;&Acy;&Kcy;&Tcy;&Icy;&Kcy;&Acy;
+       </span>
+       <span aria-hidden="true" class="section-symbol">
+        &nearrow;
+       </span>
+      </div>
+      <h2 id="projects-title">
+       &Ncy;&acy;&vcy;&chcy;&acy;&lcy;&softcy;&ncy;&iukcy; &pcy;&rcy;&ocy;&jukcy;&kcy;&tcy;&icy;
+      </h2>
+      <div class="project">
+       <span class="project-num">
+        01
+       </span>
+       <div>
+        <h3>
+         &Scy;&iecy;&mcy;&acy;&ncy;&tcy;&icy;&chcy;&ncy;&iecy; &rcy;&iecy;&zcy;&yucy;&mcy;&iecy;
+        </h3>
+        <p>
+         &Vcy;&iecy;&bcy;&scy;&tcy;&ocy;&rcy;&iukcy;&ncy;&kcy;&acy; &ncy;&acy; HTML5 &zcy; &lcy;&ocy;&gcy;&iukcy;&chcy;&ncy;&ocy;&yucy; &scy;&tcy;&rcy;&ucy;&kcy;&tcy;&ucy;&rcy;&ocy;&yucy;, &ncy;&acy;&vcy;&iukcy;&gcy;&acy;&tscy;&iukcy;&jukcy;&yucy; &tcy;&acy; &rcy;&ocy;&zcy;&dcy;&iukcy;&lcy;&acy;&mcy;&icy;.
+        </p>
+        <span class="tag">
+         HTML5
+        </span>
+       </div>
+      </div>
+      <div class="project">
+       <span class="project-num">
+        02
+       </span>
+       <div>
+        <h3>
+         &Acy;&dcy;&acy;&pcy;&tcy;&icy;&vcy;&ncy;&iecy; CSS-&rcy;&iecy;&zcy;&yucy;&mcy;&iecy;
+        </h3>
+        <p>
+         &Ocy;&fcy;&ocy;&rcy;&mcy;&lcy;&iecy;&ncy;&ncy;&yacy; &zcy;&acy; &dcy;&ocy;&pcy;&ocy;&mcy;&ocy;&gcy;&ocy;&yucy; &zcy;&ocy;&vcy;&ncy;&iukcy;&shcy;&ncy;&iukcy;&khcy; &scy;&tcy;&icy;&lcy;&iukcy;&vcy;, Flexbox, Grid &tcy;&acy; &mcy;&iecy;&dcy;&iukcy;&acy;&zcy;&acy;&pcy;&icy;&tcy;&iukcy;&vcy;.
+        </p>
+        <span class="tag">
+         CSS3
+        </span>
+        <span class="tag">
+         RESPONSIVE
+        </span>
+       </div>
+      </div>
+      <div class="project">
+       <span class="project-num">
+        03
+       </span>
+       <div>
+        <h3>
+         &Rcy;&iecy;&zcy;&yucy;&mcy;&iecy; &ncy;&acy; React
+        </h3>
+        <p>
+         &Kcy;&ocy;&mcy;&pcy;&ocy;&ncy;&iecy;&ncy;&tcy;&ncy;&acy; &acy;&rcy;&khcy;&iukcy;&tcy;&iecy;&kcy;&tcy;&ucy;&rcy;&acy; &zcy; Vite &tcy;&acy; &scy;&tcy;&icy;&lcy;&iukcy;&zcy;&acy;&tscy;&iukcy;&jukcy;&yucy; &zcy;&acy; &dcy;&ocy;&pcy;&ocy;&mcy;&ocy;&gcy;&ocy;&yucy; Tailwind CSS.
+        </p>
+        <span class="tag">
+         REACT
+        </span>
+        <span class="tag">
+         TAILWIND
+        </span>
+       </div>
+      </div>
+     </section>
+     <section aria-labelledby="contacts-title" class="panel panel-contact" id="contacts">
+      <div class="panel-header">
+       <span class="section-label">
+        05 / &Kcy;&Ocy;&Ncy;&Tcy;&Acy;&Kcy;&Tcy;&Icy;
+       </span>
+       <span aria-hidden="true" class="section-symbol">
+        ◎
+       </span>
+      </div>
+      <h2 id="contacts-title">
+       &Ncy;&acy; &zcy;&vcy;ʼ&yacy;&zcy;&kcy;&ucy;
+      </h2>
+      <p>
+       &Mcy;&iukcy;&scy;&tscy;&iecy; &ncy;&acy;&vcy;&chcy;&acy;&ncy;&ncy;&yacy;: &Lcy;&softcy;&vcy;&iukcy;&vcy;, &Ucy;&kcy;&rcy;&acy;&yicy;&ncy;&acy;.
+      </p>
+      <div class="contact-links">
+       <a href="https://github.com/vitaliichesakkb2025-spec/web-programming-labs" rel="noopener noreferrer" target="_blank">
+        GitHub / &ncy;&acy;&vcy;&chcy;&acy;&lcy;&softcy;&ncy;&iukcy; &rcy;&ocy;&bcy;&ocy;&tcy;&icy;
+        <span>
+         &nearrow;
+        </span>
+       </a>
+       <a href="https://lpnu.ua/" rel="noopener noreferrer" target="_blank">
+        &Lcy;&softcy;&vcy;&iukcy;&vcy;&scy;&softcy;&kcy;&acy; &pcy;&ocy;&lcy;&iukcy;&tcy;&iecy;&khcy;&ncy;&iukcy;&kcy;&acy;
+        <span>
+         &nearrow;
+        </span>
+       </a>
+       <a href="https://developer.mozilla.org/uk/docs/Web/CSS" rel="noopener noreferrer" target="_blank">
+        &Dcy;&ocy;&vcy;&iukcy;&dcy;&ncy;&icy;&kcy; CSS
+        <span>
+         &nearrow;
+        </span>
+       </a>
+       <button class="contact-link-button" id="open-contact" type="button">
+        &Ncy;&acy;&pcy;&icy;&scy;&acy;&tcy;&icy; &mcy;&iecy;&ncy;&iukcy; &chcy;&iecy;&rcy;&iecy;&zcy; &fcy;&ocy;&rcy;&mcy;&ucy;
+        <span>
+         &nearrow;
+        </span>
+       </button>
+      </div>
+     </section>
+    </div>
+    <section aria-labelledby="reviews-title" class="reviews-section" id="reviews">
+     <div class="reviews-heading">
+      <div>
+       <p class="section-label">
+        06 / &Vcy;&Iukcy;&Dcy;&Gcy;&Ucy;&Kcy;&Icy;
+       </p>
+       <h2 id="reviews-title">
+        &Kcy;&ocy;&mcy;&iecy;&ncy;&tcy;&acy;&rcy;&iukcy; &zcy; API
+       </h2>
+       <p>
+        &Dcy;&iecy;&mcy;&ocy;&ncy;&scy;&tcy;&rcy;&acy;&tscy;&iukcy;&jcy;&ncy;&iukcy; &dcy;&acy;&ncy;&iukcy; JSONPlaceholder, &pcy;&ucy;&bcy;&lcy;&iukcy;&kcy;&acy;&tscy;&iukcy;&yacy; &numero;24. &TScy;&iecy; &ncy;&acy;&vcy;&chcy;&acy;&lcy;&softcy;&ncy;&iukcy;, &acy; &ncy;&iecy; &rcy;&iecy;&acy;&lcy;&softcy;&ncy;&iukcy; &rcy;&iecy;&kcy;&ocy;&mcy;&iecy;&ncy;&dcy;&acy;&tscy;&iukcy;&yicy; &rcy;&ocy;&bcy;&ocy;&tcy;&ocy;&dcy;&acy;&vcy;&tscy;&iukcy;&vcy;.
+       </p>
+      </div>
+      <button class="btn btn-ghost" id="reload-reviews" type="button">
+       &Ocy;&ncy;&ocy;&vcy;&icy;&tcy;&icy; &vcy;&iukcy;&dcy;&gcy;&ucy;&kcy;&icy; &orarr;
+      </button>
+     </div>
+     <p aria-live="polite" id="reviews-status" role="status">
+      &Zcy;&acy;&vcy;&acy;&ncy;&tcy;&acy;&zhcy;&ucy;&yucy; &kcy;&ocy;&mcy;&iecy;&ncy;&tcy;&acy;&rcy;&iukcy;&hellip;
+     </p>
+     <div class="reviews-list" id="reviews-list">
+     </div>
+    </section>
+    <!-- Inline CSS: третій спосіб стилізації, лише один приклад -->
+    <p class="method-note" style="letter-spacing: 0.045em;">
+     &Pcy;&rcy;&icy;&kcy;&lcy;&acy;&dcy; inline CSS: &vcy;&lcy;&acy;&scy;&tcy;&icy;&vcy;&iukcy;&scy;&tcy;&softcy; letter-spacing &zcy;&acy;&dcy;&acy;&ncy;&acy; &acy;&tcy;&rcy;&icy;&bcy;&ucy;&tcy;&ocy;&mcy; style &tscy;&softcy;&ocy;&gcy;&ocy; &acy;&bcy;&zcy;&acy;&tscy;&ucy;.
+    </p>
+   </main>
+   <footer class="footer">
+    <span>
+     &copy; 2026 &CHcy;&iecy;&scy;&acy;&kcy; &Vcy;&iukcy;&tcy;&acy;&lcy;&iukcy;&jcy; &Vcy;&ocy;&lcy;&ocy;&dcy;&icy;&mcy;&icy;&rcy;&ocy;&vcy;&icy;&chcy;
+    </span>
+    <span>
+     &Lcy;&Acy;&Bcy;&Ocy;&Rcy;&Acy;&Tcy;&Ocy;&Rcy;&Ncy;&Acy; &numero;4 / JAVASCRIPT
+    </span>
+    <a href="#top">
+     &Ncy;&acy;&gcy;&ocy;&rcy;&ucy; &uarr;
+    </a>
+    <details class="system-details" id="system-details" open="">
+     <summary>
+      &Iukcy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&iukcy;&yacy; &pcy;&rcy;&ocy; &bcy;&rcy;&acy;&ucy;&zcy;&iecy;&rcy; &tcy;&acy; &Ocy;&Scy; &middot; localStorage
+     </summary>
+     <p class="system-caption">
+      &Dcy;&acy;&ncy;&iukcy;, &dcy;&ocy;&scy;&tcy;&ucy;&pcy;&ncy;&iukcy; &scy;&tcy;&ocy;&rcy;&iukcy;&ncy;&tscy;&iukcy; &chcy;&iecy;&rcy;&iecy;&zcy; API &bcy;&rcy;&acy;&ucy;&zcy;&iecy;&rcy;&acy;. &Zcy;&bcy;&iecy;&rcy;&iukcy;&gcy;&acy;&yucy;&tcy;&softcy;&scy;&yacy; &lcy;&icy;&shcy;&iecy; &lcy;&ocy;&kcy;&acy;&lcy;&softcy;&ncy;&ocy; &ncy;&acy; &tscy;&softcy;&ocy;&mcy;&ucy; &pcy;&rcy;&icy;&scy;&tcy;&rcy;&ocy;&yicy;.
+     </p>
+     <dl class="system-grid" id="system-data">
+     </dl>
+    </details>
+   </footer>
+  </div>
+  <div class="modal-backdrop" hidden="" id="contact-modal" role="presentation">
+   <div aria-describedby="modal-description" aria-labelledby="modal-title" aria-modal="true" class="modal-card" role="dialog">
+    <div class="modal-top">
+     <div>
+      <p class="section-label">
+       &Zcy;&Vcy;&Ocy;&Rcy;&Ocy;&Tcy;&Ncy;&Icy;&Jcy; &Zcy;&Vcy;&rsquo;&YAcy;&Zcy;&Ocy;&Kcy;
+      </p>
+      <h2 id="modal-title">
+       &Zcy;&acy;&lcy;&icy;&shcy;&icy;&tcy;&icy; &pcy;&ocy;&vcy;&iukcy;&dcy;&ocy;&mcy;&lcy;&iecy;&ncy;&ncy;&yacy;
+      </h2>
+     </div>
+     <button aria-label="&Zcy;&acy;&kcy;&rcy;&icy;&tcy;&icy; &fcy;&ocy;&rcy;&mcy;&ucy;" class="modal-close" id="close-modal" type="button">
+      ✕
+     </button>
+    </div>
+    <p id="modal-description">
+     &Fcy;&ocy;&rcy;&mcy;&acy; &vcy;&iukcy;&dcy;&kcy;&rcy;&icy;&vcy;&acy;&jukcy;&tcy;&softcy;&scy;&yacy; &pcy;&iukcy;&scy;&lcy;&yacy; 60 &scy;&iecy;&kcy;&ucy;&ncy;&dcy; &pcy;&iecy;&rcy;&iecy;&bcy;&ucy;&vcy;&acy;&ncy;&ncy;&yacy; &ncy;&acy; &scy;&acy;&jcy;&tcy;&iukcy;. &Dcy;&acy;&ncy;&iukcy; &ncy;&acy;&dcy;&scy;&icy;&lcy;&acy;&yucy;&tcy;&softcy;&scy;&yacy; &chcy;&iecy;&rcy;&iecy;&zcy; Formspree &pcy;&iukcy;&scy;&lcy;&yacy; &ncy;&acy;&lcy;&acy;&shcy;&tcy;&ucy;&vcy;&acy;&ncy;&ncy;&yacy; endpoint.
+    </p>
+    <form action="#" id="feedback-form" method="POST">
+     <label>
+      &Iukcy;&mcy;&rsquo;&yacy;
+      <input autocomplete="name" maxlength="80" minlength="2" name="name" required="" type="text"/>
+     </label>
+     <label>
+      Email
+      <input autocomplete="email" name="email" required="" type="email"/>
+     </label>
+     <label>
+      &Ncy;&ocy;&mcy;&iecy;&rcy; &tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;&ucy;
+      <input autocomplete="tel" name="phone" pattern="[+0-9() .-]{7,22}" required="" title="&Vcy;&kcy;&acy;&zhcy;&iukcy;&tcy;&softcy; &ncy;&ocy;&mcy;&iecy;&rcy; &zcy; 7&ndash;22 &scy;&icy;&mcy;&vcy;&ocy;&lcy;&iukcy;&vcy;" type="tel"/>
+     </label>
+     <label>
+      &Pcy;&ocy;&vcy;&iukcy;&dcy;&ocy;&mcy;&lcy;&iecy;&ncy;&ncy;&yacy;
+      <textarea maxlength="2000" minlength="5" name="message" required="" rows="4"></textarea>
+     </label>
+     <p aria-live="polite" class="form-status" id="form-status" role="status">
+     </p>
+     <button class="btn btn-primary" type="submit">
+      &Ncy;&acy;&dcy;&iukcy;&scy;&lcy;&acy;&tcy;&icy; &nearrow;
+     </button>
+    </form>
+   </div>
+  </div>
+  <script src="./script.js" type="module">
+  </script>
+ </body>
+</html>
