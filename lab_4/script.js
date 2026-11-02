@@ -111,7 +111,11 @@ function initialiseForm() {
   });
   let dismissed = false;
   try { dismissed = sessionStorage.getItem(SESSION_MODAL_KEY) === '1'; } catch (_) { /* No sessionStorage. */ }
-  if (!dismissed) window.setTimeout(openModal, 60_000);
+  if (!dismissed) window.setTimeout(() => {
+    let alreadyDismissed = false;
+    try { alreadyDismissed = sessionStorage.getItem(SESSION_MODAL_KEY) === '1'; } catch (_) { /* No sessionStorage. */ }
+    if (!alreadyDismissed) openModal();
+  }, 60_000);
 }
 
 const currentTheme = () => {

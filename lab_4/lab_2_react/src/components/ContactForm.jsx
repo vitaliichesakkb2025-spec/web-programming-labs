@@ -10,13 +10,14 @@ export default function ContactForm() {
   const firstInput = useRef(null);
   const closeButton = useRef(null);
   const lastFocusedElement = useRef(null);
+  const dismissedRef = useRef(false);
   const dialogRef = useRef(null);
 
   useEffect(() => {
     let dismissed = false;
     try { dismissed = sessionStorage.getItem(DISMISSED_KEY) === '1'; } catch { /* приватний режим */ }
     if (dismissed) return;
-    const timer = window.setTimeout(() => setIsOpen(true), 60_000);
+    const timer = window.setTimeout(() => { if (!dismissedRef.current) setIsOpen(true); }, 60_000);
     return () => window.clearTimeout(timer);
   }, []);
 
@@ -45,6 +46,7 @@ export default function ContactForm() {
   }, [isOpen]);
 
   function dismiss() {
+    dismissedRef.current = true;
     setIsOpen(false);
     try { sessionStorage.setItem(DISMISSED_KEY, '1'); } catch { /* приватний режим */ }
   }
