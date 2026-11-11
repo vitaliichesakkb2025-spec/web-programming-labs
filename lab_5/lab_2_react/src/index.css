@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #090d18;
+  --color-surface: #131b2c;
+  --color-line: #293650;
+  --color-glow: #bdd0ff;
+  --color-peach: #f7a96a;
+}
+
+
+/* Лабораторна №4: поля форми та світла/темна тема застосунку. */
+.form-input { width:100%; border:1px solid #445576; border-radius:9px; padding:11px 13px; font:inherit; color:#f4f6ff; background:#090d18; }
+.form-input:focus-visible { outline:2px solid #bdd0ff; outline-offset:2px; }
+.app-shell.theme-light { background:#eff4fb; color:#14233c; }
+.theme-light .bg-surface { background:#fff; }
+.theme-light .bg-ink { background:#eff4fb; }
+.theme-light .border-line { border-color:#cad6e8; }
+.theme-light .text-slate-100, .theme-light .text-slate-200 { color:#192b47; }
+.theme-light .text-slate-300 { color:#425774; }
+.theme-light .text-slate-400, .theme-light .text-slate-500 { color:#546a87; }
+.theme-light .text-glow { color:#315eaa; }
+.theme-light .text-peach { color:#a14b12; }
+.theme-light .bg-\[\#1d2a43\] { background:#e6edfa; }
+.theme-light header { background-image:linear-gradient(125deg,#e1ebfb,#f4f8ff 68%); }
+.theme-light header h1 { color:#14233c; }
+.theme-light header h1 span { color:#315eaa; }
+.theme-light header .bg-glow, .theme-light .bg-glow { background:#315eaa; }
+.theme-light header .bg-glow, .theme-light .bg-glow { color:#fff; }
+.theme-light .text-ink { color:#152a4d; }
+.theme-light .form-input { background:#f8faff; color:#14233c; border-color:#afbfda; }
+.theme-light [role=dialog] { background:#fff; }
+.theme-light [role=dialog] button.bg-glow {color:#fff;}
+.theme-light .bg-slate-700 { background:#e6ecf8; }
