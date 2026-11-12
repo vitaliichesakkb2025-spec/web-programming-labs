@@ -29,7 +29,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-wrap items-center justify-between gap-4 border-t border-line py-8 text-[10px] font-bold tracking-wide text-slate-500">
       <span>© 2026 Чесак Віталій Володимирович</span>
-      <span>ЛАБОРАТОРНА №5 / REACT + DEPLOY v1</span>
+      <span>ЛАБОРАТОРНА №5 / REACT + DEPLOY v2</span>
       <a href="#top" className="transition hover:text-glow">Нагору ↑</a>
       <details open className="mt-3 w-full border-t border-line pt-5 text-xs font-normal tracking-normal">
         <summary className="cursor-pointer font-bold text-glow">Інформація про браузер та ОС · localStorage</summary>
