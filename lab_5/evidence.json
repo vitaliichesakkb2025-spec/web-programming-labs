@@ -1,0 +1,312 @@
+{
+  "verifiedDate": "2026-11-12",
+  "timezone": "Europe/Kyiv",
+  "commit": "ed30944541cf5270b780d33ef9b3fe1b9889b43a",
+  "automaticDeploymentsVerified": true,
+  "deployments": [
+    {
+      "id": "dpl_A8CMUyRmrc7TEXjQeKuZ9RgnYaH2",
+      "name": "chesak-lab5-html",
+      "url": "chesak-lab5-html-bl0ypfz0k-jadeheart2008-1637.vercel.app",
+      "type": "LAMBDAS",
+      "state": "READY",
+      "createdAt": 1794472112051,
+      "creator": {
+        "uid": "vAB7ySLSj3YOZnupOymD3dYP",
+        "username": "jadeheart2008-1637"
+      },
+      "project": {
+        "id": "prj_N13UbutRpYYzYZk4QpaEbMer8okG",
+        "name": "chesak-lab5-html",
+        "framework": null
+      },
+      "meta": {
+        "githubCommitRef": "main",
+        "githubCommitSha": "ed30944541cf5270b780d33ef9b3fe1b9889b43a",
+        "githubCommitMessage": "lab5: update both deployment markers from v1 to v2",
+        "githubRepo": "web-programming-labs",
+        "githubOrg": "vitaliichesakkb2025-spec"
+      },
+      "alias": [
+        "chesak-lab5-html.vercel.app",
+        "chesak-lab5-html-jadeheart2008-1637.vercel.app",
+        "chesak-lab5-html-git-main-jadeheart2008-1637.vercel.app"
+      ],
+      "target": "production",
+      "regions": [
+        "iad1"
+      ],
+      "buildingAt": 1794472112963,
+      "ready": 1794472114728,
+      "readyState": "READY",
+      "source": "git",
+      "aliasError": null,
+      "buildLogs": [
+        {
+          "time": 1794472112634,
+          "text": "Running build in Washington, D.C., USA (East) – iad1"
+        },
+        {
+          "time": 1794472112635,
+          "text": "Build machine configuration: 2 cores, 8 GB"
+        },
+        {
+          "time": 1794472112766,
+          "text": "Cloning github.com/vitaliichesakkb2025-spec/web-programming-labs (Branch: main, Commit: ed30944)"
+        },
+        {
+          "time": 1794472112767,
+          "text": "Previous build caches not available."
+        },
+        {
+          "time": 1794472113108,
+          "text": "Cloning completed: 341.000ms"
+        },
+        {
+          "time": 1794472113745,
+          "text": "Running \"vercel build\""
+        },
+        {
+          "time": 1794472113757,
+          "text": "Vercel CLI 65.14.0"
+        },
+        {
+          "time": 1794472113961,
+          "text": "Build Completed in /vercel/output [38ms]"
+        },
+        {
+          "time": 1794472114007,
+          "text": "Deploying outputs..."
+        },
+        {
+          "time": 1794472114812,
+          "text": "Deployment completed"
+        },
+        {
+          "time": 1794472114818,
+          "text": "Creating build cache..."
+        },
+        {
+          "time": 1794472114836,
+          "text": "Skipping cache upload because no files were prepared"
+        }
+      ]
+    },
+    {
+      "id": "dpl_6kpWGjJBiFbSGHQi2UeSaVztcQ1c",
+      "name": "chesak-lab5-react",
+      "url": "chesak-lab5-react-95m5xv5ek-jadeheart2008-1637.vercel.app",
+      "type": "LAMBDAS",
+      "state": "READY",
+      "createdAt": 1794472112038,
+      "creator": {
+        "uid": "vAB7ySLSj3YOZnupOymD3dYP",
+        "username": "jadeheart2008-1637"
+      },
+      "project": {
+        "id": "prj_LcaxfYdoU8pAVhTrfic8hkm9VTt1",
+        "name": "chesak-lab5-react",
+        "framework": "vite"
+      },
+      "meta": {
+        "githubCommitRef": "main",
+        "githubCommitSha": "ed30944541cf5270b780d33ef9b3fe1b9889b43a",
+        "githubCommitMessage": "lab5: update both deployment markers from v1 to v2",
+        "githubRepo": "web-programming-labs",
+        "githubOrg": "vitaliichesakkb2025-spec"
+      },
+      "alias": [
+        "chesak-lab5-react.vercel.app",
+        "chesak-lab5-react-jadeheart2008-1637.vercel.app",
+        "chesak-lab5-react-git-main-jadeheart2008-1637.vercel.app"
+      ],
+      "target": "production",
+      "regions": [
+        "iad1"
+      ],
+      "buildingAt": 1794472115621,
+      "ready": 1794472122188,
+      "readyState": "READY",
+      "source": "git",
+      "aliasError": null,
+      "buildLogs": [
+        {
+          "time": 1794472115316,
+          "text": "Running build in Washington, D.C., USA (East) – iad1"
+        },
+        {
+          "time": 1794472115317,
+          "text": "Build machine configuration: 2 cores, 8 GB"
+        },
+        {
+          "time": 1794472115437,
+          "text": "Cloning github.com/vitaliichesakkb2025-spec/web-programming-labs (Branch: main, Commit: ed30944)"
+        },
+        {
+          "time": 1794472115439,
+          "text": "Previous build caches not available."
+        },
+        {
+          "time": 1794472115730,
+          "text": "Cloning completed: 293.000ms"
+        },
+        {
+          "time": 1794472116341,
+          "text": "Running \"vercel build\""
+        },
+        {
+          "time": 1794472116351,
+          "text": "Vercel CLI 65.14.0"
+        },
+        {
+          "time": 1794472116893,
+          "text": "Running \"install\" command: `npm install`..."
+        },
+        {
+          "time": 1794472117682,
+          "text": "npm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options."
+        },
+        {
+          "time": 1794472119149,
+          "text": ""
+        },
+        {
+          "time": 1794472119149,
+          "text": "added 78 packages, and audited 79 packages in 2s"
+        },
+        {
+          "time": 1794472119149,
+          "text": ""
+        },
+        {
+          "time": 1794472119149,
+          "text": "12 packages are looking for funding"
+        },
+        {
+          "time": 1794472119149,
+          "text": "  run `npm fund` for details"
+        },
+        {
+          "time": 1794472119150,
+          "text": ""
+        },
+        {
+          "time": 1794472119150,
+          "text": "found 0 vulnerabilities"
+        },
+        {
+          "time": 1794472119151,
+          "text": "npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:"
+        },
+        {
+          "time": 1794472119151,
+          "text": "npm warn install-scripts   esbuild@0.25.12 (postinstall: node install.js)"
+        },
+        {
+          "time": 1794472119152,
+          "text": "npm warn install-scripts"
+        },
+        {
+          "time": 1794472119152,
+          "text": "npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow."
+        },
+        {
+          "time": 1794472119448,
+          "text": "npm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options."
+        },
+        {
+          "time": 1794472119467,
+          "text": ""
+        },
+        {
+          "time": 1794472119467,
+          "text": "> lab-5-react-deployment-chesak@1.0.0 build"
+        },
+        {
+          "time": 1794472119467,
+          "text": "> vite build"
+        },
+        {
+          "time": 1794472119467,
+          "text": ""
+        },
+        {
+          "time": 1794472119852,
+          "text": "\u001b[36mvite v6.4.5 \u001b[32mbuilding for production...\u001b[36m\u001b[39m"
+        },
+        {
+          "time": 1794472119935,
+          "text": "transforming..."
+        },
+        {
+          "time": 1794472121064,
+          "text": "\u001b[32m✓\u001b[39m 39 modules transformed."
+        },
+        {
+          "time": 1794472121232,
+          "text": "rendering chunks..."
+        },
+        {
+          "time": 1794472121240,
+          "text": "computing gzip size..."
+        },
+        {
+          "time": 1794472121251,
+          "text": "\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.51 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  0.38 kB\u001b[22m"
+        },
+        {
+          "time": 1794472121251,
+          "text": "\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-CJCb2cTd.css  \u001b[39m\u001b[1m\u001b[2m 24.43 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  5.53 kB\u001b[22m"
+        },
+        {
+          "time": 1794472121252,
+          "text": "\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-D9DY9MTk.js   \u001b[39m\u001b[1m\u001b[2m245.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 76.32 kB\u001b[22m"
+        },
+        {
+          "time": 1794472121252,
+          "text": "\u001b[32m✓ built in 1.36s\u001b[39m"
+        },
+        {
+          "time": 1794472121355,
+          "text": "Build Completed in /vercel/output [4s]"
+        },
+        {
+          "time": 1794472121384,
+          "text": "Deploying outputs..."
+        },
+        {
+          "time": 1794472122297,
+          "text": "Deployment completed"
+        },
+        {
+          "time": 1794472122301,
+          "text": "Creating build cache..."
+        },
+        {
+          "time": 1794472124598,
+          "text": "Created build cache: 2s"
+        },
+        {
+          "time": 1794472124598,
+          "text": "Uploading build cache [16.55 MB]"
+        },
+        {
+          "time": 1794472124939,
+          "text": "Build cache uploaded: 341.000ms"
+        }
+      ]
+    }
+  ],
+  "browserChecks": {
+    "widths": [
+      1280,
+      466
+    ],
+    "horizontalOverflow": false,
+    "commentsPerSite": 5,
+    "localStorageFieldsPerSite": 13,
+    "consoleErrors": 0,
+    "formspreeAction": "https://formspree.io/f/xzeekzba",
+    "formSubmissionTested": false
+  }
+}

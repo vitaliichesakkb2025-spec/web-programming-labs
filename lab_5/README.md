@@ -1,58 +1,32 @@
-# Лабораторна №5 — Розгортання вебсайту
+# Лабораторна №5 — розгортання вебсайту
 
-**Дисципліна:** Технології вебпрограмування  
-**Виконав:** Чесак Віталій Володимирович, група КБ-208.
+**Виконав:** Чесак Віталій Володимирович, КБ-208.
 
-## Дві частини лабораторної
-
-| Версія | Код | Root Directory у Vercel | Framework | Build | Output |
+| Версія | Код / Root Directory | Framework | Build | Output | HTTPS |
 |---|---|---|---|---|---|
-| HTML + CSS + JS | [static](static/) | `lab_5/static` | Other | без збірки | `.` |
-| React + Tailwind 4 | [lab_2_react](lab_2_react/) | `lab_5/lab_2_react` | Vite | `npm run build` | `dist` |
+| HTML/CSS/JS | [lab_5/static](static/) | Other | без збірки | . | [Відкрити HTML](https://chesak-lab5-html.vercel.app/) |
+| React + Tailwind 4 | [lab_5/lab_2_react](lab_2_react/) | Vite | npm run build | dist | [Відкрити React](https://chesak-lab5-react.vercel.app/) |
 
-Використано код лабораторної №4, включно з fetch для JSONPlaceholder (варіант 24), Formspree, localStorage, таймером і темами. Раніші папки лаб залишено без змін.
+## Підтверджений результат
+12.11.2026 обидва існуючі проєкти прив'язано до цього GitHub-репозиторію. Production Branch — main, автоматичне призначення доменів увімкнено. Нових проєктів не створювали.
 
-## Опубліковані сайти
+Окремий [коміт ed30944: DEPLOY v1 → DEPLOY v2](https://github.com/vitaliichesakkb2025-spec/web-programming-labs/commit/ed30944541cf5270b780d33ef9b3fe1b9889b43a) автоматично створив два Production Deployments зі станом READY і source: git:
 
-| Версія | URL | Статус |
-|---|---|---|
-| Статичний HTML/JS | https://chesak-lab5-html.vercel.app/ | Production READY, HTTP 200 |
-| React/Vite | https://chesak-lab5-react.vercel.app/ | Production READY, HTTP 200; Vite 6.4.5, 39 модулів |
+- [HTML deployment](https://vercel.com/jadeheart2008-1637/chesak-lab5-html/A8CMUyRmrc7TEXjQeKuZ9RgnYaH2).
+- [React deployment](https://vercel.com/jadeheart2008-1637/chesak-lab5-react/6kpWGjJBiFbSGHQi2UeSaVztcQ1c).
 
-Обидва сайти опубліковані через Vercel API напряму із файлів початкового коміту лаби. **Вони поки не під'єднані до GitHub як Git-проєкти; автоматичні деплої після push ще не перевірено.** Маркер на сайтах поки `DEPLOY v1`.
+На обох основних HTTPS-сайтах у браузері перевірено DEPLOY v2. Перевірено широкі й вузькі макети, коментарі JSONPlaceholder (публікація №24), перемикання теми, localStorage та автоматичні форми. Formspree endpoint задано в обох версіях; повідомлень не надсилали.
 
-## Під'єднання GitHub для автоматичних оновлень
+Попередні лабораторні не змінено.
 
-- В акаунті Vercel: **Account Settings → Authentication → Login Connections → GitHub**. Це не те саме, що GitHub Connect для агентів.
-- Переконайся, що Vercel GitHub App має доступ до `vitaliichesakkb2025-spec/web-programming-labs`.
-- У **вже створених** Vercel-проєктах `chesak-lab5-html` і `chesak-lab5-react`: **Settings → Git → Connect Git Repository**. Вибери той самий репозиторій і гілку `main`. Root Directory вистав `lab_5/static` та `lab_5/lab_2_react` відповідно в Settings → Build and Deployment.
-- Після під'єднання Git спочатку переконайся, що `DEPLOY v1` відображається на двох сайтах, і лише потім зроби окремий коміт `v1 → v2`, push та зафіксуй два нові Production Deployments.
+## Локальний запуск
+Статична версія: відкрити static/index.html через HTTP-сервер, наприклад Live Server.
 
-## Перевірка чинних Vercel-проєктів
+React: перейти в lab_5/lab_2_react, виконати npm ci, npm run dev. Production-збірка: npm run build. node_modules, dist і .vercel у Git не зберігаються.
 
-**Не створюй проєкти вдруге** — обидва вже існують у Vercel. Відкрий їх у Dashboard і переконайся, що production-адреси відкриваються за HTTPS. У GitHub джерельні файли містяться в папках `lab_5/static` та `lab_5/lab_2_react`.
-
-Якщо репозиторії не видно під час підключення Git, перевір **[Vercel Account Authentication](https://vercel.com/account/settings/authentication)** і GitHub Login Connection, а потім налаштуй Git у кожному проєкті.
-
-## Запуск локально
-
-Статичний сайт: `lab_5/static/index.html` через Live Server.
-
-React запускай через Vite, а не Live Server:
-
-```powershell
-cd lab_5/lab_2_react
-npm install
-npm run dev
-npm run build
-```
-
-`node_modules`, `dist`, `.vercel` не зберігай у Git.
-
-## Документи
-
-- [Чекліст здачі](CHECKLIST.md)
-- [Короткий захист](DEFENSE.md)
-- [Стислий звіт](REPORT.md)
-
-Публічні URL і факт автоматичного деплою зазначаються лише після реальної перевірки, без вигаданих скриншотів.
+## Матеріали
+- [Звіт із реальними скриншотами та результатами перевірок](REPORT.md).
+- [Чекліст](CHECKLIST.md).
+- [Короткий захист](DEFENSE.md).
+- [Скриншоти](screenshots/).
+- [Машиночитані докази Vercel та витяги build logs](evidence.json).
