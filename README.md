@@ -15,6 +15,4 @@
 
 Кожна лабораторна знаходиться в окремій папці `lab_N`. HTML відкривається через **Live Server** у VS Code, React — з вкладеної папки `lab_2_react` командами `npm install`, `npm run dev`.
 
-**Для лабораторної №5:** потрібно створити два проєкти Vercel з окремими Root Directory; див. [інструкцію](lab_5/README.md).
-
-**Лабораторна №5 — публічні версії:** [HTML/JS](https://chesak-lab5-html.vercel.app/) · [React/Vite](https://chesak-lab5-react.vercel.app/). Сайти розгорнуті, автоматичний Git-deploy іще налаштовується.
+Лабораторна №5 на Vercel: [HTML/JS](https://chesak-lab5-html.vercel.app/), [React](https://chesak-lab5-react.vercel.app/).

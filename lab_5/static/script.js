@@ -135,7 +135,7 @@ function initialiseTheme() {
     manualSelection = true;
     applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
   });
-  // Automatic theme updates after a clock boundary unless visitor has selected a manual override.
+  // Тема змінюється автоматично, якщо користувач не вибрав її вручну
   window.setInterval(() => { if (!manualSelection) applyTheme(currentTheme()); }, 60_000);
 }
 

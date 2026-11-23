@@ -1,32 +1,31 @@
-# Лабораторна №5 — розгортання вебсайту
+# Лабораторна №5. Розгортання вебсайту
 
-**Виконав:** Чесак Віталій Володимирович, КБ-208.
+Чесак Віталій, КБ-208
 
-| Версія | Код / Root Directory | Framework | Build | Output | HTTPS |
-|---|---|---|---|---|---|
-| HTML/CSS/JS | [lab_5/static](static/) | Other | без збірки | . | [Відкрити HTML](https://chesak-lab5-html.vercel.app/) |
-| React + Tailwind 4 | [lab_5/lab_2_react](lab_2_react/) | Vite | npm run build | dist | [Відкрити React](https://chesak-lab5-react.vercel.app/) |
+Сайт-резюме з лабораторної №4 у двох варіантах, опублікований на Vercel:
 
-## Підтверджений результат
-12.11.2026 обидва існуючі проєкти прив'язано до цього GitHub-репозиторію. Production Branch — main, автоматичне призначення доменів увімкнено. Нових проєктів не створювали.
+- HTML/CSS/JS: https://chesak-lab5-html.vercel.app/ (папка `static`)
+- React + Tailwind: https://chesak-lab5-react.vercel.app/ (папка `lab_2_react`)
 
-Окремий [коміт ed30944: DEPLOY v1 → DEPLOY v2](https://github.com/vitaliichesakkb2025-spec/web-programming-labs/commit/ed30944541cf5270b780d33ef9b3fe1b9889b43a) автоматично створив два Production Deployments зі станом READY і source: git:
+Обидва проєкти у Vercel підключені до цього репозиторію, тому після push у `main` сайти оновлюються автоматично.
 
-- [HTML deployment](https://vercel.com/jadeheart2008-1637/chesak-lab5-html/A8CMUyRmrc7TEXjQeKuZ9RgnYaH2).
-- [React deployment](https://vercel.com/jadeheart2008-1637/chesak-lab5-react/6kpWGjJBiFbSGHQi2UeSaVztcQ1c).
+| | HTML | React |
+|---|---|---|
+| Root Directory | lab_5/static | lab_5/lab_2_react |
+| Framework | Other | Vite |
+| Build Command | - | npm run build |
+| Output Directory | . | dist |
 
-На обох основних HTTPS-сайтах у браузері перевірено DEPLOY v2. Перевірено широкі й вузькі макети, коментарі JSONPlaceholder (публікація №24), перемикання теми, localStorage та автоматичні форми. Formspree endpoint задано в обох версіях; повідомлень не надсилали.
+## Запуск локально
 
-Попередні лабораторні не змінено.
+HTML: відкрити `static/index.html` через Live Server.
 
-## Локальний запуск
-Статична версія: відкрити static/index.html через HTTP-сервер, наприклад Live Server.
+React:
 
-React: перейти в lab_5/lab_2_react, виконати npm ci, npm run dev. Production-збірка: npm run build. node_modules, dist і .vercel у Git не зберігаються.
+```
+cd lab_5/lab_2_react
+npm install
+npm run dev
+```
 
-## Матеріали
-- [Звіт із реальними скриншотами та результатами перевірок](REPORT.md).
-- [Чекліст](CHECKLIST.md).
-- [Короткий захист](DEFENSE.md).
-- [Скриншоти](screenshots/).
-- [Машиночитані докази Vercel та витяги build logs](evidence.json).
+Скриншоти для звіту лежать у папці `screenshots`.
