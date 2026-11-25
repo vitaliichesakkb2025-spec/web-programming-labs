@@ -1,3 +1,2 @@
-// Зареєструй форму на https://formspree.io/ та встав її endpoint нижче.
-// Приклад: 'https://formspree.io/f/abcdefgh'. Не вставляй email або токени API.
+// Endpoint форми на Formspree
 export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xzeekzba';

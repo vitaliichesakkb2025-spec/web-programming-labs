@@ -1,15 +1,9 @@
-# React-частина лабораторної №4
+# React-версія (лабораторна №4)
 
-Засновано на лабораторній №3 (React + Tailwind CSS 4). Додано компоненти `Reviews.jsx` та `ContactForm.jsx`, оновлено `Footer.jsx` (Navigator API + localStorage), `Header.jsx` (кнопка теми), `App.jsx` (стан теми).
+На основі лаби №3. Додані компоненти `Reviews.jsx` і `ContactForm.jsx`, у `Footer.jsx` дані браузера з localStorage, у `Header.jsx` кнопка теми.
 
-З кореня цього React-проєкту:
-
-```powershell
+```
 npm install
 npm run dev
 npm run build
 ```
-
-Для реального надсилання форми встав особистий endpoint Formspree у `src/form-config.js`.
-
-Докладний чекліст — `../CHECKLIST.md`.
