@@ -27,5 +27,3 @@ cd lab_5/lab_2_react
 npm install
 npm run dev
 ```
-
-Скриншоти для звіту лежать у папці `screenshots`.
