@@ -10,6 +10,7 @@
 | 3 | CSS, адаптивність і Tailwind | [Лабораторна №3](lab_3/README.md) |
 | 4 | JavaScript: localStorage, Fetch API, форма, теми | [Лабораторна №4](lab_4/README.md) |
 | 5 | Deployment: HTML/JS та React/Vite на Vercel | [Лабораторна №5](lab_5/README.md) |
+| 6 | Node.js: сервер на Koa, форма і збереження звернень | [Лабораторна №6](lab_6/README.md) |
 
 ## Як запускати
 
